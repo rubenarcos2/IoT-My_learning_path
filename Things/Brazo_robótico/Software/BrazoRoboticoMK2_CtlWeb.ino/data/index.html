@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html class="no-js" lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Brazo robótico MK2</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./css/estilo.css">
+  <script type="text/javascript" src="./js/main.js"></script>
+</head>
+
+<body>
+  <h1>Ejes</h1>
+  <div id="sliderContainer">
+    Eje0
+    <p><input type='range' min='102' max='512' value='307' class='slider' id='0' oninput='updateData(this)'/></p>
+    <p align='center'><span id='txt0'></span></p>
+    Eje1
+    <p><input type='range' min='102' max='512' value='307' class='slider' id='1' oninput='updateData(this)'/></p>
+    <p align='center'><span id='txt1'></span></p>
+    Eje2
+    <p><input type='range' min='102' max='512' value='307' class='slider' id='2' oninput='updateData(this)'/></p>
+    <p align='center'><span id='txt2'></span></p>
+    Eje3
+    <p><input type='range' min='102' max='512' value='307' class='slider' id='3' oninput='updateData(this)'/></p>
+    <p align='center'><span id='txt3'></span></p>
+	Eje4
+    <p><input type='range' min='102' max='512' value='307' class='slider' id='4' oninput='updateData(this)'/></p>
+    <p align='center'><span id='txt4'></span></p>
+  </div>
+  <div>
+    <input type="checkbox" id='16' onchange="updateData(this)"/>Laser
+    <br>
+    <button type="button" onclick="getData()">Get Data!</button>
+    <label id="receivedText" />
+  </div>  
+</body>
+
+</html>
